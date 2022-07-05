@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <img src="./images/Board.png" alt="">
+        
+    <h1 id="mainHeading">Averag Calculator</h1>
+
+    <form onsubmit="calculate(); return false;" id="avgForm">
+        <label for="MathMarks">Mathematics</label>
+        <input type="number" min="0" required id="MathMarks" class="subjects" placeholder="Enter your Marks"> <br>
+
+        <label for="EnglishMarks">English</label>
+        <input type="number" min="0" required id="EnglishMarks" class="subjects" placeholder="Enter your Marks"><br>
+
+        <label for="ScienceMarks">Science</label>
+        <input type="number" min="0" required id="ScienceMarks" class="subjects" placeholder="Enter your Marks"><br>
+
+        <label for="PhysicalMarks">Physical Education</label>
+        <input type="number" min="0" required id="PhysicalMarks" class="subjects" placeholder="Enter your Marks"><br>
+
+        <label for="ChemistryMarks">Chemistry</label>
+        <input type="number" min="0" required id="ChemistryMarks" class="subjects" placeholder="Enter your Marks"><br>
+
+        <label for="ComputerMarks">Computer Basics</label>
+        <input type="number" min="0" required id="ComputerMarks" class="subjects" placeholder="Enter your Marks"><br>
+
+        <label for="ArtsMarks">Arts</label>
+        <input type="number" min="0" required id="ArtsMarks" class="subjects" placeholder="Enter your Marks"><br>
+
+        <label for="HistoryMarks">History</label>
+        <input type="number" min="0" required id="HistoryMarks" class="subjects" placeholder="Enter your Marks"><br>
+
+        <label for="LiteratureMarks">Literature</label>
+        <input type="number" min="0" required id="LiteratureMarks" class="subjects" placeholder="Enter your Marks"><br>
+
+        <label for="GeographyMarks">Geography</label>
+        <input type="number" min="0" required id="GeographyMarks" class="subjects" placeholder="Enter your Marks"><br><br><br><br>
+
+        <button type="submit">Calculate</button>
+        <button type="reset" id="resetBtn" onclick="formReset();">Reset Form</button>
+        
+    </form>
+
+    <h1 id="finalResult"></h1>
+    
+
+    
+    <script>
+        function calculate() {
+            let MathMarks = +document.querySelector("#MathMarks").value;
+            let EnglishMarks = +document.querySelector("#EnglishMarks").value;
+            let ScienceMarks = +document.querySelector("#ScienceMarks").value;
+            let PhysicalMarks = +document.querySelector("#PhysicalMarks").value;
+            let ChemistryMarks = +document.querySelector("#ChemistryMarks").value;
+            let ComputerMarks = +document.querySelector("#ComputerMarks").value;
+            let ArtsMarks = +document.querySelector("#ArtsMarks").value;
+            let HistoryMarks = +document.querySelector("#HistoryMarks").value;
+            let LiteratureMarks = +document.querySelector("#LiteratureMarks").value;
+            let GeographyMarks = +document.querySelector("#GeographyMarks").value;
+            
+            let addingSubjects =  MathMarks + EnglishMarks + ScienceMarks + PhysicalMarks + ChemistryMarks +  ComputerMarks + ArtsMarks + HistoryMarks + LiteratureMarks + GeographyMarks;
+            
+            let calculateAvg = (addingSubjects / 10);     
+            
+            document.querySelector("#finalResult").innerHTML = `${calculateAvg} is the average of 10 subjects`; 
+           
+        }
+        function formReset(){
+            document.querySelector("#avgForm").reset();
+            document.querySelector("#finalResult").innerHTML = '';
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+#mainHeading{
+    position: relative;
+    top: -566px;
+    text-align: center;
+    color: white;
+    font-family: cursive;
+}
+
+img{
+    height: 600px;
+    width: 100%;
+   
+}
+#avgForm{
+    position: relative;
+    top: -555px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+#desiredNumber{
+    padding: 0.3em;
+}
+button{
+    padding: 5px 24px 5px 24px;
+    font-size: medium;
+    font-weight: bold;
+    color: steelblue;
+    
+}
+#finalResult{
+    position: relative;
+    top: -660px;
+    text-align: center;
+    color: #15f911;
+    font-family: cursive;
+    font-size: x-large;
+}
+
+body, html {
+    height: 100%;
+    }
+
+.subjects{
+    margin-bottom: 4px;
+}
+#MathMarks{
+    margin-left: 49px;
+}
+#EnglishMarks{
+    margin-left: 98px;
+}
+#ScienceMarks{
+    margin-left: 94px;
+}
+#ChemistryMarks{
+    margin-left: 76px;
+}
+#ComputerMarks{
+    margin-left: 18px;
+}
+#ArtsMarks{
+    margin-left: 130px;
+}
+#HistoryMarks{
+    margin-left: 102px;
+}
+#LiteratureMarks{
+    margin-left: 80px;
+}
+#GeographyMarks{
+    margin-left: 72px;
+}
